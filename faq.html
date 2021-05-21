@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+  <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(26, 6, 6);
+}
+
+li {
+  float: left;
+}
+
+li a {font-family: 'Courier New', Courier, monospace;
+  display: block;
+  color: rgb(218, 203, 203);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+a:hover {
+  color: hotpink;
+        }
+
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  height: calc(100vh - 8em);
+   background-color: rgb(255, 255, 255);
+  color: rgba(9, 9, 9, 0.75);
+  font-family: 'Anonymous Pro', monospace;  
+
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+   
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(8, 8, 8, 0.75);}
+  to{border-right-color: transparent;}
+}
+.middle{
+       font-size: 80px;
+       font-family: 'Courier New', Courier, monospace;
+       font-weight: bolder;
+       color: red;
+       padding-bottom: 185px;
+}
+.footer{
+ 
+  text-align: center;
+}
+
+
+.center,img{text-align: center;
+     border-radius:150%;
+    }
+.faq{text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form{
+    text-align: center;
+    border-radius: 10px;
+padding-bottom: 160px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+   <div class="header">
+     <nav>
+        <ul>
+         <li><a href="page1.html">Welcome</a></li>
+          <li><a href="items.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+                <li><a href="index.html">Contact</a></li>
+                  <li><a href="faq.html">faq</a></li>
+                     <li><a href="extra.html">Extra/Items</a></li>
+        </ul>
+     </nav>
+ </div>
+ <br><br>
+<div style="main">
+  <h2 class="line-1 anim-typewriter">Question and Answers ?</h2>
+</div>
+<div class="center">
+    <img src="Mrq.jpg" width="120px" height="140">
+
+</div>
+<div class="faq">
+   <h1>How can we help you ?</h1>
+</div>
+<div class="form">
+    <form method="POST" action="" class="sample-form">
+        <h2>Did you find what you looking for?</h2>
+        <label class="text">
+          <span>Answer</span>
+          <input name="q1" placeholder="Your answer" required>
+        </label>
+        <h2>What can we do to improve ?</h2>
+        <label class="checkbox">
+          <input name="q2" value="option1" type="checkbox">
+          <svg height="16" width="12" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z" />
+          </svg>
+          <span>No need to improve</span>
+        </label>
+        <label class="checkbox">
+          <input name="q2" value="option2" type="checkbox">
+          <svg height="16" width="12" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z" />
+          </svg>
+          <span>Email me I will advice </span>
+        </label>
+        <h2>Do we meet your demands ?</h2>
+        <label class="radio">
+          <input name="q3" value="option1" type="radio">
+          <svg height="16" width="8" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4S0 10.2 0 8z" />
+          </svg>
+          <span>No you did not</span>
+        </label>
+        <label class="radio">
+          <input name="q3" value="option2" type="radio">
+          <svg height="16" width="8" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4S0 10.2 0 8z" />
+          </svg>
+          <span>Yes you did</span>
+        </label><br><br>
+        <button style="border-color: yellow; font-family:">Send it!</button>
+      </form>
+
+</div>
+<div class="footer">2021@Qhawe Ntinzi.All rights reserved</div>
+</body>            
+</html>

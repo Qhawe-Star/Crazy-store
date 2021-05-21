@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+  <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(26, 6, 6);
+}
+
+li {
+  float: left;
+}
+
+li a {font-family: 'Courier New', Courier, monospace;
+  display: block;
+  color: rgb(218, 203, 203);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+a:hover {
+  color: hotpink;
+        }
+
+
+
+}
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  height: calc(100vh - 8em);
+  
+  color: rgba(9, 9, 9, 0.75);
+  font-family: 'Anonymous Pro', monospace;  
+
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+   
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(23, 3, 31, 0.75);}
+  to{border-right-color: transparent;}
+}
+.middle{
+       font-size: 80px;
+       font-family: 'Courier New', Courier, monospace;
+       font-weight: bolder;
+       color: red;
+       padding-bottom: 185px;
+}
+.footer{
+ 
+  text-align: center;
+}
+
+
+body{background-repeat: no-repeat;
+    background-image:url('crazy.png');
+    background-size: 200px;
+}
+
+
+</style>
+<body>
+   <div class="header">
+     <nav>
+        <ul>
+         <li><a href="page1.html">Welcome</a></li>
+          <li><a href="items.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+                <li><a href="index.html">Contact</a></li>
+                  <li><a href="faq.html">faq</a></li>
+                     <li><a href="extra.html">Extra/Items</a></li>
+        </ul>
+     </nav>
+ </div>
+ <br><br>
+<div style="main">
+  <h2 class="line-1 anim-typewriter">Welcome to The Store !</h2>
+</div>
+
+
+   <div class="middle">
+
+   <h1>QHAWE'S CRAZY STORE</h1>
+
+   </div>
+
+</div>
+
+<div class="footer">2021@Qhawe Ntinzi.All rights reserved</div>
+</body>            
+</html>

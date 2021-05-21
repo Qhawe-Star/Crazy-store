@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+  <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(26, 6, 6);
+}
+
+li {
+  float: left;
+}
+
+li a {font-family: 'Courier New', Courier, monospace;
+  display: block;
+  color: rgb(218, 203, 203);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+a:hover {
+  color: rgb(182, 29, 29);
+        }
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  height: calc(100vh - 8em);
+  background-color: rgba(227, 211, 233, 0.842);
+  color: rgba(9, 9, 9, 0.75);
+  font-family: 'Anonymous Pro', monospace;  
+
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+   
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(8, 8, 8, 0.75);}
+  to{border-right-color: transparent;}
+}
+.middle{text-align: center;
+    padding-bottom: 100px;
+}
+
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #1b0ed0;
+  color: white;
+}
+.footer{text-align: center;}
+</style>
+<body>
+   <div class="header">
+     <nav>
+        <ul>
+         <li><a href="page1.html">Welcome</a></li>
+          <li><a href="items.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+                <li><a href="index.html">Contact</a></li>
+                  <li><a href="faq.html">faq</a></li>
+                     <li><a href="extra.html">Extra/Items</a></li>
+        </ul>
+     </nav>
+ </div><br>
+ <div style="main">
+    <h2 class="line-1 anim-typewriter">Services Offered at Qhawe's Store !</h2>
+    <div class="middle">
+<h1>Our Services Platform</h1>
+</div>
+
+
+
+
+<table id="customers">
+    <tr>
+      <th>Tell</th>
+      <th>Name Of Manager</th>
+      <th>Store Location</th>
+    </tr>
+    <tr>
+      <td>+21 89576 347865</td>
+      <td>Qhawe N</td>
+      <td>Capetown</td>
+    </tr>
+    <tr>
+      <td>+227 7346565 47</td>
+      <td>Lazola J</td>
+      <td>Nkanini Store</td>
+    </tr>
+    <tr>
+      <td>+27 4786 783465</td>
+      <td>Esona G</td>
+      <td>Makhaya Store</td>
+    </tr>
+    <tr>
+      <td>+27 23786 4785</td>
+      <td>Sihosonke M</td>
+      <td>Kuyasa Store</td>
+    </tr>
+    <tr>
+      <td>+21 77846 47856</td>
+      <td>Xolisa W</td>
+      <td>Litha Park Store</td>
+    </tr>
+    <tr>
+      <td>+27 78 74545</td>
+      <td>Mothusi M</td>
+      <td>Mfuleni Store</td>
+    </tr>
+    <tr>
+      <td>+27 8743 78465</td>
+      <td>Luvo N</td>
+       <td>Harare Store</td>
+    </tr>
+    <tr>
+      <td>+27 34786 478356</td>
+      <td>Asemahle S</td>
+      <td>Athlone Store</td>
+    </tr>
+    <tr>
+      <td>+27 72364 78456</td>
+      <td>Babalwa M</td>
+      <td>Site B Store</td>
+    </tr>
+    <tr>
+      <td>+27 89347 78943</td>
+      <td>Luthando V</td>
+      <td>Site C Store</td>
+    </tr>
+  </table>
+
+
+
+
+
+
+</div>
+ <div class="footer">2021@Qhawe Ntinzi.All rights reserved</div>
+</body>            
+</html>

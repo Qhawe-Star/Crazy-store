@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+  <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(26, 6, 6);
+}
+
+li {
+  float: left;
+}
+
+li a { font-family: 'Courier New', Courier, monospace;
+  display: block;
+  color: rgb(218, 203, 203);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+a:hover {
+  color: hotpink;
+        }
+
+
+
+}
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  height: calc(100vh - 8em);
+  
+  color: rgba(9, 9, 9, 0.75);
+  font-family: 'Anonymous Pro', monospace;  
+
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+   
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(8, 8, 8, 0.75);}
+  to{border-right-color: transparent;}
+}
+.middle{
+       font-size: 80px;
+       font-family: 'Courier New', Courier, monospace;
+       font-weight: bolder;
+       color: red;
+       padding-bottom: 185px;
+}
+.footer{
+  padding-inline-start: 600px;
+  text-align: center;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 320px;
+}
+
+.portfolio h2 {
+  flex-basis: 100%;
+  text-align: center;
+  margin: 50px auto 30px;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #111;
+}
+.card {
+  width: 25%;
+  overflow: hidden;
+  position: relative;
+}
+.card .content {
+  z-index: 2;
+  width: 100%;
+  position: absolute;
+  bottom: -100px;
+  transition: all 0.7s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 100px;
+  background: #111;
+}
+.card .image {
+  z-index: 1;
+  height: 100%;
+}
+.card img {
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s ease;
+  transform: scale(1.2);
+}
+
+.card:hover .content {
+  bottom: 0px;
+  color: #fff;
+}
+
+.card:hover .image img {
+  transform: scale(1);
+}
+
+.card .content span:first-child {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+
+.card .content span:last-child {
+  font-size: 14px;
+  color: #18cfab;
+  text-align: center;
+  font-weight: 700;
+  
+}
+
+
+@media screen and (max-width: 768px) {
+  .card {
+  width: 50%;
+  }
+  .card .content {
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+  width: 100%;
+  }
+}
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  height: calc(100vh - 8em);
+  
+  color: rgba(9, 9, 9, 0.75);
+  font-family: 'Anonymous Pro', monospace;  
+
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+   
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(23, 3, 31, 0.75);}
+  to{border-right-color: transparent;}
+}
+.middle{
+       font-size: 80px;
+       font-family: 'Courier New', Courier, monospace;
+       font-weight: bolder;
+       color: red;
+       padding-bottom: 185px;
+}
+
+
+
+
+</style>
+<body>
+   <div class="header">
+     <nav>
+        <ul>
+         <li><a href="page1.html">Welcome</a></li>
+          <li><a href="items.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+                <li><a href="index.html">Contact</a></li>
+                  <li><a href="faq.html">faq</a></li>
+                     <li><a href="extra.html">Extra/Items</a></li>
+        </ul>
+     </nav>
+ </div>
+
+<br><br>
+<div style="main">
+    <h2 class="line-1 anim-typewriter">View Our Assets !</h2>
+  </div>
+
+
+<div class="portfolio">
+    <h2 class="title">Crazy Store Assets</h2>
+    <a href="#" class="card">
+      <div class="content">
+        <span class="title">Electronics</span>
+        <span class="category">Mobile / Portable / Rebranding</span>
+      </div>
+      <div class="image">
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="" />
+      </div>
+    </a>
+  
+    <a href="#" class="card">
+      <div class="content">
+        <span class="title">Laptops</span>
+        <span class="category">Acer / Lenova / Research </span>
+      </div>
+      <div class="image">
+        <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="" />
+      </div>
+    </a>
+  
+    <a href="#" class="card">
+      <div class="content">
+        <span class="title">Minerals</span>
+        <span class="category">Sparkles / Water</span>
+      </div>
+      <div class="image">
+        <img src="https://images.unsplash.com/photo-1553531888-a5892402adce?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="" />
+      </div>
+    </a>
+  
+    <a href="#" class="card">
+      <div class="content">
+        <span class="title">Fruit & Veg</span>
+        <span class="category">Fruit / Veg</span>
+      </div>
+      <div class="image">
+        <img src="https://images.unsplash.com/photo-1484980859177-5ac1249fda6f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1684&q=80" alt="" />
+      </div>
+    </a>
+  
+    <!--<a href="#" class="card">
+      <div class="content">
+        <span class="title">AR-VR</span>
+        <span class="category">VR / AR / Creative</span>
+      </div>
+      <div class="image">
+        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1398&q=80" alt="" />
+      </div>
+    </a>
+  
+    <a href="#" class="card">
+      <div class="content">
+        <span class="title">Logo</span>
+        <span class="category">Design / Logo / Clothing</span>
+      </div>
+      <div class="image">
+        <img src="https://images.unsplash.com/photo-1600609842388-3e2ed2a1454a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="" />
+      </div>
+    </a>
+  
+    <a href="#" class="card">
+      <div class="content">
+        <span class="title">Art</span>
+        <span class="category">Drawing / Painting / Abstract</span>
+      </div>
+      <div class="image">
+        <img src="https://images.unsplash.com/photo-1544273677-c433136021d4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="" />
+      </div>
+    </a>
+  
+    <a href="#" class="card">
+      <div class="content">
+        <span class="title">Native Apps</span>
+        <span class="category">Coding / Mobile </span>
+      </div>
+      <div class="image">
+        <img src="https://images.unsplash.com/photo-1551650992-ee4fd47df41f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="" />
+      </div>
+    </a>
+  
+  </div>-->
+  
+ <div class="footer">2021@Qhawe Ntinzi.All rights reserved</div>
+</body>            
+</html>
